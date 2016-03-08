@@ -1,0 +1,45 @@
+/**************************
+PARTIALS
+**************************/
+.home-wrapper {
+  padding: 0 25px; }
+
+.header-image-wrapper {
+  height: 100px;
+  background-color: blue; }
+
+.header-nav-wrapper {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: black;
+  text-align: center;
+  padding: 0 50px; }
+  .header-nav-wrapper .nav-link {
+    margin-top: 15px; }
+    .header-nav-wrapper .nav-link a {
+      text-decoration: none;
+      color: white; }
+
+.main-slideshow-wrapper {
+  height: 400px;
+  background-color: red;
+  margin-bottom: 15px; }
+
+.bottom-nav-wrapper {
+  padding: 0; }
+  .bottom-nav-wrapper .bottom-link {
+    height: 210px;
+    padding: 0 15px; }
+    .bottom-nav-wrapper .bottom-link .bottom-nav-button {
+      height: 100%;
+      background-color: green; }
+
+/**************************
+GLOBAL
+**************************/
+.main-wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/*# sourceMappingURL=styles.css.map */

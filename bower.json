@@ -1,0 +1,33 @@
+{
+  "name": "Nic's Knacks",
+  "homepage": "https://github.com/SamGrayson/Nic-s-Knacks",
+  "authors": [
+    "Sam Grayson <samuel.c.grayson17@gmail.com>"
+  ],
+  "description": "Website for the misses",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.5.0",
+    "angular-bootstrap": "~1.2.4",
+    "angularfire": "~1.1.4",
+    "firebase": "~2.4.1",
+    "font-awesome": "fontawesome#~4.5.0",
+    "jquery-ui": "~1.11.4",
+    "underscore": "~1.8.3",
+    "bower": "*",
+    "install": "~1.0.4",
+    "angular-ui-router": "~0.2.18",
+    "angular-socket-io": "~0.7.0",
+    "bootstrap": "~3.3.6"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nic's Knacks</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="NicsKnacks">
+
+<div class="main-wrapper">
+  <ui-view></ui-view>
+</div>
+
+<!-- Deps -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+
+<!-- Socket.io -->
+<script src="bower_components/angular-socket-io/socket.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.0/socket.io.min.js"></script>
+
+<!-- app files -->
+<script src="main/app.js"></script>
+<!-- admin -->
+<script src="admin/admin-ctrl.js"></script>
+<script src="admin/admin-service.js"></script>
+<!-- blog -->
+<script src="blog/blog-ctrl.js"></script>
+<script src="blog/blog-service.js"></script>
+<!-- global -->
+<script src="shop/shop-ctrl.js"></script>
+<script src="shop/shop-service.js"></script>
+<!-- home -->
+<script src="home/home-ctrl.js"></script>
+<script src="home/home-service.js"></script>
+<!-- shop -->
+<script src="shop/shop-ctrl.js"></script>
+<script src="shop/shop-service.js"></script>
+
+</body>
+</html>
