@@ -2,7 +2,10 @@
 PARTIALS
 **************************/
 .home-wrapper {
-  padding: 0 25px; }
+  padding: 0 25px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .header-image-wrapper {
   height: 100px;
@@ -21,9 +24,9 @@ PARTIALS
       color: white; }
 
 .main-slideshow-wrapper {
-  height: 400px;
+  height: 385px;
   background-color: red;
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
 
 .bottom-nav-wrapper {
   padding: 0; }
