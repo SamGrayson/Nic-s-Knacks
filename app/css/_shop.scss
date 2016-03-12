@@ -1,0 +1,44 @@
+.page-title {
+  height: 125px;
+  width: 100%;
+  position: relative;
+  .shop-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 100px;
+    color: blue;
+  }
+}
+
+.shop-list-wrapper {
+  margin: 0;
+  .individual-item {
+    padding: 15px;
+    .item-wrapper {
+      border: 1px solid lightgray;
+      height: 100%;
+      width: 100%;
+      .item-picture-preview {
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .description {
+        height: 145px;
+        padding: 15px;
+        .top-description {
+          height: 35px;
+        }
+      }
+      .description-action {
+        bottom: 15px;
+        padding: 15px;
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

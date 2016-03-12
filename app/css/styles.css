@@ -39,7 +39,7 @@ PARTIALS
   height: 125px;
   width: 100%;
   position: relative; }
-  .page-title h1 {
+  .page-title .blog-title {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,6 +79,39 @@ PARTIALS
       height: 75px; }
       .post-main-wrapper .post-full .post-content .post-action .action-text {
         margin-top: 28px; }
+
+.page-title {
+  height: 125px;
+  width: 100%;
+  position: relative; }
+  .page-title .shop-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 100px;
+    color: blue; }
+
+.shop-list-wrapper {
+  margin: 0; }
+  .shop-list-wrapper .individual-item {
+    padding: 15px; }
+    .shop-list-wrapper .individual-item .item-wrapper {
+      border: 1px solid lightgray;
+      height: 100%;
+      width: 100%; }
+      .shop-list-wrapper .individual-item .item-wrapper .item-picture-preview img {
+        height: 100%;
+        width: 100%; }
+      .shop-list-wrapper .individual-item .item-wrapper .description {
+        height: 145px;
+        padding: 15px; }
+        .shop-list-wrapper .individual-item .item-wrapper .description .top-description {
+          height: 35px; }
+      .shop-list-wrapper .individual-item .item-wrapper .description-action {
+        bottom: 15px;
+        padding: 15px; }
+        .shop-list-wrapper .individual-item .item-wrapper .description-action div {
+          width: 100%; }
 
 /**************************
 GLOBAL
