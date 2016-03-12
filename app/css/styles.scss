@@ -3,13 +3,72 @@ PARTIALS
 **************************/
 
 @import 'home';
+@import 'blog';
 
 /**************************
 GLOBAL
 **************************/
 
+h1, h2, h4, h4, p {
+  margin: 0;
+}
+
+// COLORS
+
+$off-black: #1f1f1f;
+$off-white: #eee;
+
 .main-wrapper {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page-content-wrapper {
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+/**************************
+Fixed-Nav
+**************************/
+
+.fixed-nav-top {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  background-color: whitesmoke;
+  .fixed-nav-left {
+    float: left;
+    position: absolute;
+    left: 150px;
+    .fixed-nav-button-wrap {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      padding: 15px 0;
+      .fixed-nav-button-link {
+        color: #1f1f1f;
+      }
+    }
+  }
+  .fixed-logo-left {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    float: left;
+    height: 50px;
+  }
+  .fixed-nav-search-wrap {
+    float: right;
+    width: 200px;
+  }
 }

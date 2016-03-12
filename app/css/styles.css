@@ -14,14 +14,12 @@ PARTIALS
 .header-nav-wrapper {
   height: 50px;
   margin-bottom: 15px;
-  background-color: black;
   text-align: center;
   padding: 0 50px; }
   .header-nav-wrapper .nav-link {
     margin-top: 15px; }
     .header-nav-wrapper .nav-link a {
-      text-decoration: none;
-      color: white; }
+      text-decoration: none; }
 
 .main-slideshow-wrapper {
   height: 385px;
@@ -37,12 +35,100 @@ PARTIALS
       height: 100%;
       background-color: green; }
 
+.page-title {
+  height: 125px;
+  width: 100%;
+  position: relative; }
+  .page-title h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 100px;
+    color: pink; }
+
+.post-content-wrapper {
+  padding: 0 15px; }
+
+.post-main-wrapper .post-full {
+  border: 1px solid lightgray;
+  padding: 20px 25px 20px 25px;
+  margin: 0 0 15px 0; }
+  .post-main-wrapper .post-full .post-title {
+    height: 50px; }
+    .post-main-wrapper .post-full .post-title .title {
+      float: left;
+      margin-top: 8px; }
+    .post-main-wrapper .post-full .post-title .time-stamp {
+      float: right;
+      margin-top: 12px;
+      font-size: 18px; }
+  .post-main-wrapper .post-full .post-content {
+    margin-top: 15px;
+    border-top: 1px solid lightgray;
+    padding: 25px 0; }
+    .post-main-wrapper .post-full .post-content .post-image {
+      padding: 0 15px 15px 15px; }
+      .post-main-wrapper .post-full .post-content .post-image img {
+        width: 100%;
+        height: 100%; }
+    .post-main-wrapper .post-full .post-content .post-text {
+      padding: 0 15px 15px 15px; }
+    .post-main-wrapper .post-full .post-content .post-action {
+      margin-top: 15px;
+      border-top: 1px solid lightgray;
+      height: 75px; }
+      .post-main-wrapper .post-full .post-content .post-action .action-text {
+        margin-top: 28px; }
+
 /**************************
 GLOBAL
 **************************/
+h1, h2, h4, h4, p {
+  margin: 0; }
+
 .main-wrapper {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto; }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+.page-content-wrapper {
+  margin-top: 50px;
+  padding: 0 15px; }
+
+/**************************
+Fixed-Nav
+**************************/
+.fixed-nav-top {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  background-color: whitesmoke; }
+  .fixed-nav-top .fixed-nav-left {
+    float: left;
+    position: absolute;
+    left: 150px; }
+    .fixed-nav-top .fixed-nav-left .fixed-nav-button-wrap {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      padding: 15px 0; }
+      .fixed-nav-top .fixed-nav-left .fixed-nav-button-wrap .fixed-nav-button-link {
+        color: #1f1f1f; }
+  .fixed-nav-top .fixed-logo-left {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    float: left;
+    height: 50px; }
+  .fixed-nav-top .fixed-nav-search-wrap {
+    float: right;
+    width: 200px; }
 
 /*# sourceMappingURL=styles.css.map */

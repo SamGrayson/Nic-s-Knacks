@@ -12,6 +12,39 @@
 <body ng-app="NicsKnacks">
 
 <div class="main-wrapper">
+  <div class="fixed-nav-top" ng-if="true">
+    <div class="fixed-nav-left">
+      <div class="fixed-nav-button-wrap">
+        <a ui-sref="home" class="fixed-nav-button-link">
+          Home
+        </a>
+      </div>
+      <div class="fixed-nav-button-wrap">
+        <a ui-sref="health" class="fixed-nav-button-link">
+          Health
+        </a>
+      </div>
+      <div class="fixed-nav-button-wrap">
+        <a ui-sref="shop" class="fixed-nav-button-link">
+          Shop
+        </a>
+      </div>
+      <div class="fixed-nav-button-wrap">
+        <a ui-sref="about" class="fixed-nav-button-link">
+          About
+        </a>
+      </div>
+    </div>
+    <div class="fixed-logo-left">
+      <div class="fixed-logo-img">
+
+      </div>
+    </div>
+    <div class="fixed-nav-search-wrap">
+      <i></i>
+      <input type="text"></input>
+    </div>
+  </div>
   <ui-view></ui-view>
 </div>
 

@@ -12,18 +12,21 @@
   background-color: blue;
 };
 
+// NAV //
 .header-nav-wrapper {
   height: 50px;
   margin-bottom: 15px;
-  background-color: black;
   text-align: center;
   padding: 0 50px;
   .nav-link {
     margin-top: 15px;
     a {
       text-decoration: none;
-      color: white;
+      // color: $off-black;
     };
+    &:hover {
+
+    }
   };
 };
 
