@@ -212,6 +212,9 @@ body {
   margin-top: 50px;
   padding: 0 15px; }
 
+.active-hover:hover {
+  cursor: pointer; }
+
 /**************************
 Fixed-Nav
 **************************/

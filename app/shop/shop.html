@@ -7,11 +7,11 @@
     <div class="individual-item col-md-4 col-sm-6 col-xs-12" ng-repeat="prod in products" id="product{{prod._id}}">
       <div class="item-wrapper">
         <div class="item-picture-preview" >
-          <img src="http://placehold.it/350x150" alt="">
+          <img open-individual data-toggle="modal" data-target="#shopModal" info="prod" position="prod._id" src="http://placehold.it/350x250" alt="">
         </div>
         <div class="description" >
           <div class="top-description">
-            <a href="" class="pull-left"><h4>{{prod.title}}</h4></a>
+            <a type="button" open-individual data-toggle="modal" data-target="#shopModal" info="prod" position="prod._id" class="pull-left"><h4>{{prod.title}}</h4></a>
             <p class="pull-right">{{prod.price | currency}}</p>
           </div>
           <div class="bottom-description">
@@ -20,7 +20,7 @@
         </div>
         <div class="description-action">
           <!-- <div class="btn btn-success" open-individual info="prod" ng-click="descriptionOpen = !descriptionOpen" position="prod._id">Purchase</div> -->
-          <div open-individual info="prod" position="prod._id"></div>
+          <div class="btn btn-success">purchase</div>
         </div>
       </div>
     </div>

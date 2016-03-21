@@ -11,10 +11,10 @@ app.directive('openIndividual', function($timeout, $filter) {
       info: '=info',
       position: '=position',
     },
-    template: '<div class="btn btn-success" data-toggle="modal" data-target="#shopModal">Purchase</div>',
     link: function(scope, element, attr) {
-      $timeout(function(){
         //Setup
+        angular.element(element).addClass('active-hover');
+
         var openDescription = function() {
           var selection = document.getElementsByClassName('shop-modal');
           var box = angular.element(selection);
@@ -29,12 +29,14 @@ app.directive('openIndividual', function($timeout, $filter) {
                 <div class="modal-body"> \
                   <div class="row"> \
                     <div class="col-xs-12 margin-bottom-20"> \
-                      <img style="width: 100%" src="http://placehold.it/350x150" alt=""> \
+                      <img style="width: 100%" src="http://placehold.it/350x250" alt=""> \
                     </div> \
-                    <div class="col-xs-12"><h2>' + scope.info.title + '<span class="pull-right margin-bottom-15">' + $filter('currency')(scope.info.price) + '</span></h2></div> \
+                    <div class="col-xs-12"> \
+                    <h2 class="margin-bottom-10">' + scope.info.title + '</h2> \
+                    </div> \
                     <div class="col-xs-12"> \
                     <hr class="margin-top-5 margin-bottom-20"/> \
-                      <h3 class="margin-bottom-10">Description</h3> <br /> \
+                    <h3 class="margin-bottom-20">Description <span class="pull-right margin-bottom-10">' + $filter('currency')(scope.info.price) + '</span></h3> \
                       <div style="font-size: 18px">' + scope.info.description + '</div> \
                     </div> \
                   </div> \
@@ -46,11 +48,10 @@ app.directive('openIndividual', function($timeout, $filter) {
             </div> \
           </div>';
 
-          box.html(modalString);
-        };
+        box.html(modalString);
+      };
 
-        element.bind('click', openDescription);
-      });
+      element.bind('click', openDescription);
     },
   };
 });
