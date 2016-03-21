@@ -4,119 +4,28 @@
   </div>
   <hr />
   <div class="shop-list-wrapper row">
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
+    <div class="individual-item col-md-4 col-sm-6 col-xs-12" ng-repeat="prod in products" id="product{{prod._id}}">
       <div class="item-wrapper">
-        <div class="item-picture-preview">
+        <div class="item-picture-preview" >
           <img src="http://placehold.it/350x150" alt="">
         </div>
-        <div class="description">
+        <div class="description" >
           <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$12</p>
+            <a href="" class="pull-left"><h4>{{prod.title}}</h4></a>
+            <p class="pull-right">{{prod.price | currency}}</p>
           </div>
           <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
+            <span >{{prod.description | limitTo: 155}}{{prod.description.length > 155 ? '...' : ''}}</span>
           </div>
         </div>
         <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
+          <!-- <div class="btn btn-success" open-individual info="prod" ng-click="descriptionOpen = !descriptionOpen" position="prod._id">Purchase</div> -->
+          <div open-individual info="prod" position="prod._id"></div>
         </div>
       </div>
     </div>
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
-      <div class="item-wrapper">
-        <div class="item-picture-preview">
-          <img src="http://placehold.it/350x150" alt="">
-        </div>
-        <div class="description">
-          <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$22</p>
-          </div>
-          <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
-          </div>
-        </div>
-        <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
-        </div>
-      </div>
-    </div>
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
-      <div class="item-wrapper">
-        <div class="item-picture-preview">
-          <img src="http://placehold.it/350x150" alt="">
-        </div>
-        <div class="description">
-          <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$36</p>
-          </div>
-          <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
-          </div>
-        </div>
-        <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
-        </div>
-      </div>
-    </div>
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
-      <div class="item-wrapper">
-        <div class="item-picture-preview">
-          <img src="http://placehold.it/350x150" alt="">
-        </div>
-        <div class="description">
-          <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$11</p>
-          </div>
-          <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
-          </div>
-        </div>
-        <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
-        </div>
-      </div>
-    </div>
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
-      <div class="item-wrapper">
-        <div class="item-picture-preview">
-          <img src="http://placehold.it/350x150" alt="">
-        </div>
-        <div class="description">
-          <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$32</p>
-          </div>
-          <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
-          </div>
-        </div>
-        <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
-        </div>
-      </div>
-    </div>
-    <div class="individual-item col-md-4 col-sm-6 col-xs-12">
-      <div class="item-wrapper">
-        <div class="item-picture-preview">
-          <img src="http://placehold.it/350x150" alt="">
-        </div>
-        <div class="description">
-          <div class="top-description">
-            <a href="" class="pull-left"><h4>Sample Product</h4></a>
-            <p class="pull-right">$21</p>
-          </div>
-          <div class="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos aperiam repellat velit eveniet ex, quas, eos magni aliquid enim quasi odit.
-          </div>
-        </div>
-        <div class="description-action">
-          <div class="btn btn-success">Purchase</div>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div class="shop-modal">
+
   </div>
 </div>

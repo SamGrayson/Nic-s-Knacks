@@ -22,7 +22,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     .state('shop', {
       url: '/shop',
       templateUrl: 'shop/shop.html',
-      // controller: 'shopController'
+      controller: 'ShopController'
     })
     .state('admin', {
       url: '/admin',
